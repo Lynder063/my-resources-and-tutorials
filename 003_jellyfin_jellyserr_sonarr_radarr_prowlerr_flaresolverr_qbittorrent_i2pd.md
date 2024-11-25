@@ -11,6 +11,20 @@
 - Jellyseer[http://localhost:5055](http://localhost:5055)
 - Jellyfin [http://localhost:8096](http://localhost:8096)
 
+## Instalace
+
+- Před spuštěním compose je potřeba si připravit a porozumět struktůře jako je potřeba mít
+
+```
+/mnt/media/
+├── downloads
+├── movies
+└── shows
+```
+- `Downloads`: Mezi složka pro stahování souboru než se nám automaticky přesunout
+- `Movies`: Zde se nám pak budou vkládat **filmy**
+- `Shows`: Zde se nám pak budou vkládat **seriály**
+
 ```yml
 services:
   jellyseerr:
