@@ -1,4 +1,16 @@
-## jellyfin jellyserr sonarr radarr prowlerr flaresolverr qbittorrent i2pd
+## Nastavení media stacku pomocí Docker Compose
+- Tento Docker Compose nám nainstaluje a správně nastaví všechny služby potřebné pro **home-streaming server**
+- Pomocí služeb `Jellyseer` a jeho podslužeb `Radarr` a `Sonarr`, můžeme automaticky zažádat o film/serial a tyto služby nám najdou s případně stáhnou potřebné soubory pro sledování v **Jellyfin**u
+
+## Odkazy na všechny služby
+- Radarr: [http://localhost:7878](http://localhost:7878)
+- Sonarr: [http://localhost:8989](http://localhost:8989)
+- Prowlarr: [http://localhost:9696](http://localhost:9696)
+- qBittorrent: [http://localhost:8080](http://localhost:8080)
+- i2pd: [http://localhost:7070](http://localhost:7070)
+- Jellyseer[http://localhost:5055](http://localhost:5055)
+- Jellyfin [http://localhost:8096](http://localhost:8096)
+
 ```yml
 services:
   jellyseerr:
@@ -110,3 +122,5 @@ networks:
   media-network: 
     driver: bridge
 ```
+
+
