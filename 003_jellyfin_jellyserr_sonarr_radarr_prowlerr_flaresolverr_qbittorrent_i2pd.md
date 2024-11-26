@@ -2,14 +2,6 @@
 - Tento Docker Compose nám nainstaluje a správně nastaví všechny služby potřebné pro **home-streaming server**
 - Pomocí služeb `Jellyseer` a jeho podslužeb `Radarr` a `Sonarr`, můžeme automaticky zažádat o film/serial a tyto služby nám najdou s případně stáhnou potřebné soubory pro sledování v **Jellyfin**u
 
-## Odkazy na všechny služby
-- Radarr: http://<server-ip>
-- Sonarr: http://<server-ip>:8989
-- Prowlarr: http://<server-ip>:9696
-- qBittorrent: http://<server-ip>:8080
-- Jellyseer http://<server-ip>:5055
-- Jellyfin http://<server-ip>:8096
-
 ## Instalace
 
 - Před spuštěním compose je potřeba si připravit a porozumět struktůře jako je potřeba mít
@@ -266,7 +258,7 @@ Prefixed Range
 - Pak zajdeme Settings -> Apps a přídáme dvě aplikace to Radarr a Sonarr
 
 #### FlareSolverr
-- PŮjdeme do Settings -> Indexers a přidáme nový FlareSolverr
+- Půjdeme do Settings -> Indexers a přidáme nový FlareSolverr
 1. Name
 ```
 Flaresolverr
@@ -342,7 +334,7 @@ qbittorrent
 7. Otestujeme a uložíme
 
 ### Jellyseer (Děkuji, [Jktech](https://github.com/JKtechhw)❤️)
-[Jellyseer](assets/jellyserr_open.png)
+![Jellyseer](assets/jellyserr_open.png)
 
 #### Počáteční konfigurace
 - Server Type: **Jellyfin**
