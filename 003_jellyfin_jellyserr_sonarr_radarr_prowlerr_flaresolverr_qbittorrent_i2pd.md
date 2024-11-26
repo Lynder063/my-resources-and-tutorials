@@ -315,7 +315,7 @@ Zajdeme do našeho [Sonarr](http://localhost:8989) a jdeme do `Settings -> Gener
 5. A dáme `Test` a pokud vše proběhne dáme `Save`
 
 #### qBittorrent
-- PŮjdeme do Settings -> Download Clients a přidáme qBittorrent
+- Půjdeme do Settings -> Download Clients a přidáme qBittorrent
 
 1. Název si dáme jaký chceme
 2. Zaškrtneme `Enable`
