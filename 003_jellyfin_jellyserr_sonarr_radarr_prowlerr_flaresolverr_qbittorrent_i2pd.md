@@ -178,8 +178,7 @@ docker logs qbittorrent
 
 - A přihlásime
 - A půjdeme do  Webového UI a půjdeme do Tools -> Options -> WebUI -> Authentication
-A nastavíme svoje heslo a uživatelské jméno kdybychom si to nenastavili tak se to každým restartem bude měnit
-
+- A nastavíme svoje heslo a uživatelské jméno kdybychom si to nenastavili tak se to každým restartem bude měnit
 - **NEZAPOMENEME ULOŽIT**
 
 ### Sonarr
@@ -298,4 +297,6 @@ http://sonarr:7878
 Zajdeme do našeho [Sonarr](http://localhost:8989) a jdeme do `Settings -> General` a tam si vykopírujeme API key
 
 5. A dáme `Test` a pokud vše proběhne dáme `Save`
+
+#### qBittorrent
 
