@@ -254,6 +254,22 @@ Prefixed Range
 **Password Confirmation**: <vlastni_heslo_znovu> 
 
 - Pak zajdeme Settings -> Apps a přídáme dvě aplikace to Radarr a Sonarr
+
+#### FlareSolverr
+- PŮjdeme do Settings -> Indexers a přidáme nový FlareSolverr
+1. Name
+```
+Flaresolverr
+```
+2. Tags
+```
+flaresolverr
+```
+3. Host
+```
+http://flaresolverr:8191/
+```
+
 #### Radarr
 
 1. Sync Level
@@ -315,17 +331,4 @@ qbittorrent
 6. A to sáme jak v kroku pět uděláme to samé pro Password
 7. Otestujeme a uložíme
 
-#### FlareSolverr
-- PŮjdeme do Settings -> Indexers a přidáme nový FlareSolverr
-1. Name
-```
-Flaresolverr
-```
-2. Tags
-```
-flaresolverr
-```
-3. Host
-```
-http://flaresolverr:8191/
-```
+
