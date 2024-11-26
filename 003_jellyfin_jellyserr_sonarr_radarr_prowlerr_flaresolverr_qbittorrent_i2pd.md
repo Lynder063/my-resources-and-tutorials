@@ -25,6 +25,21 @@
 - `Movies`: Zde se nám pak budou vkládat **filmy**
 - `Shows`: Zde se nám pak budou vkládat **seriály**
 
+```
+/opt/media-stack/
+├── downloads
+├── i2pd
+├── jackett
+├── jellyfin
+├── jellyseerr
+├── prowlarr
+├── qbittorrent
+├── radarr
+├── recyclarr
+└── sonarr
+```
+- A takto vypadá naše složka v `/opt/media-stack`, zde nalezneme všechny konfigurační soubory ke všem službám. Tak můžeme jednoduše všechny vykopírovat a přesunout konfiguraci na jiný server.
+
 Proto musíme v compose vložit korektní cesty k naším složkám. Stačí pochopit jak se linkují složky do hosta z kontejneru
 ```bash
 host_slozka:kontejner_slozka
