@@ -7,7 +7,6 @@
 - Sonarr: [http://localhost:8989](http://localhost:8989)
 - Prowlarr: [http://localhost:9696](http://localhost:9696)
 - qBittorrent: [http://localhost:8080](http://localhost:8080)
-- i2pd: [http://localhost:7070](http://localhost:7070)
 - Jellyseer[http://localhost:5055](http://localhost:5055)
 - Jellyfin [http://localhost:8096](http://localhost:8096)
 
@@ -158,20 +157,14 @@ services:
     networks:
       - media-network
 
-  i2pd:
-    image: purplei2p/i2pd
-    container_name: i2pd
-    volumes:
-      - /opt/media-stack/i2pd/i2pd.conf:/home/i2pd/data/i2pd.conf
-    ports:
-      - 7070:7070
-    restart: unless-stopped
-    networks:
-      - media-network
-
 networks: 
   media-network: 
     driver: bridge
 ```
 
+## Nastavení
+### Jellyfin
+- Půjdeme na stránku [http://localhost:8096](http://localhost:8096) a projedem wizard.
 
+- Když se dostaneme na část wizardu kde máme nasměrovat Jellyfin na naše media složky tak Movies mají `/movies` a Shows mají `/shows`
+- A zbytek nastavíme podle své libosti a
