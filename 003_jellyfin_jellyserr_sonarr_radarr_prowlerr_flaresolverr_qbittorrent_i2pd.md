@@ -3,12 +3,12 @@
 - Pomocí služeb `Jellyseer` a jeho podslužeb `Radarr` a `Sonarr`, můžeme automaticky zažádat o film/serial a tyto služby nám najdou s případně stáhnou potřebné soubory pro sledování v **Jellyfin**u
 
 ## Odkazy na všechny služby
-- Radarr: [http://localhost:7878](http://localhost:7878)
-- Sonarr: [http://localhost:8989](http://localhost:8989)
-- Prowlarr: [http://localhost:9696](http://localhost:9696)
-- qBittorrent: [http://localhost:8080](http://localhost:8080)
-- Jellyseer[http://localhost:5055](http://localhost:5055)
-- Jellyfin [http://localhost:8096](http://localhost:8096)
+- Radarr: http://<server-ip>
+- Sonarr: http://<server-ip>:8989
+- Prowlarr: http://<server-ip>:9696
+- qBittorrent: http://<server-ip>:8080
+- Jellyseer http://<server-ip>:5055
+- Jellyfin http://<server-ip>:8096
 
 ## Instalace
 
@@ -330,5 +330,47 @@ qbittorrent
 5. Username dáme jako přihlašovací jméno do qBittorrentu
 6. A to sáme jak v kroku pět uděláme to samé pro Password
 7. Otestujeme a uložíme
+
+### Jellyseer (Děkuji, [Jktech](https://github.com/JKtechhw)❤️)
+[Jellyseer](assets/jellyserr_open.png)
+
+#### Počáteční konfigurace
+- Server Type: **Jellyfin**
+
+#### Počáteční konfigurace
+- Jellyfin URL: **URL pro jellyfin**
+- URL Base: **NIC**
+- Email Address: **Tvůj Email**
+- Username: **Jellyfin Uživatelské jméno!**
+- Password: **Jellyfin Heslo!**
+#### Import knihoven
+- Klikneme na **Sync Libraries**
+- Vybereme všechny knihovny
+#### Napojení na Radarr a Sonarr
+- Add Radarr Server
+	- Default server: **Povolit**
+	- Server name: **Zadáme vlastní název serveru (Radarr)**
+	- Hostname or IP Address: **radarr** *(Název containeru)*
+	- API Key: V **Radarr rozhraní** *Settings* > *General* > *API Key (Sekce security)*
+	- **Spustíme Test**
+	- Quality Profile: **HD - 720p/1080p**
+	- Root Folder: **/movies**
+	- Enable Scan: **Povolit**
+- Add Sonarr Server
+	- Default server: **Povolit**
+	- Server name: **Zadáme vlastní název serveru (Sonarr)**
+	- Hostname or IP Address: **sonarr** *(Název containeru)*
+	- API Key: V **Sonarr rozhraní** *Settings* > *General* > *API Key (Sekce security)*
+	- **Spustíme Test**
+	- Quality Profile: **HD - 720p/1080p**
+	- Root Folder: **/tv
+	- Language Profile: **Deprecated**
+	- Anime Quality Profile: **HD - 720p/1080p**
+	- Anime Root Folder: **/tv
+	- Anime Language Profile: **Deprecated**
+	- Season Folders: **Povolit**
+	- Enable Scan: **Povolit**
+
+**Finish setup**
 
 
