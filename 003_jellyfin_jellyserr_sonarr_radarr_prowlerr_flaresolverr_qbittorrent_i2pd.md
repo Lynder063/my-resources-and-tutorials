@@ -176,6 +176,16 @@ networks:
 **Authentication Method**: Form (Login Page) \
 **Username**: <vlastni_login> \
 **Password**: <vlastni_heslo> \
-**Password Confirmation**: <vlastni_heslo_znovu> \
+**Password Confirmation**: <vlastni_heslo_znovu> 
+
+![Sonar wizard](assets/sonar_setup.png)
+
+## Radarr
+- Půjdeme na stránku [http://localhost:7878](http://localhost:7878) a provedeme nastavení jako u Sonarru
+
+**Authentication Method**: Form (Login Page) \
+**Username**: <vlastni_login> \
+**Password**: <vlastni_heslo> \
+**Password Confirmation**: <vlastni_heslo_znovu> 
 
 ![Sonar wizard](assets/sonar_setup.png)
