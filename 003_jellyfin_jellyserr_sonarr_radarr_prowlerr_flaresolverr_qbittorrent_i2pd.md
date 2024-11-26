@@ -170,6 +170,18 @@ networks:
 ![Jellyfin Media Folders](assets/jellyfin_media_folder.png)
 - A zbytek nastavíme podle své libosti
 
+### qBittorrent
+- Půjdeme na stránku [http://localhost:8080](http://localhost:8080) a půjdeme do logů našeho qBittorent kontejneru a tam najdeme automaticky vygenerované heslo co si musíme přenastavit
+```bash
+docker logs qbittorrent
+```
+
+- A přihlásime
+- A půjdeme do  Webového UI a půjdeme do Tools -> Options -> WebUI -> Authentication
+A nastavíme svoje heslo a uživatelské jméno kdybychom si to nenastavili tak se to každým restartem bude měnit
+
+- **NEZAPOMENEME ULOŽIT**
+
 ### Sonarr
 - Půjdeme na stránku [http://localhost:8989](http://localhost:8989) a provedeme toto nastavení
 
