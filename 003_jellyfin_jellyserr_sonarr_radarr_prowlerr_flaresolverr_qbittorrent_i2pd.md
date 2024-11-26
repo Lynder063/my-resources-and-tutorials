@@ -234,3 +234,56 @@ Prefixed Range
 ```
 3. **ULOŽÍME**
 
+### Prowlarr
+- Půjdeme na stránku [http://localhost:9696](http://localhost:9696) a provedeme nastavení jako u Sonarru a Radaru
+
+**Authentication Method**: Form (Login Page) \
+**Username**: <vlastni_login> \
+**Password**: <vlastni_heslo> \
+**Password Confirmation**: <vlastni_heslo_znovu> 
+
+- Pak zajdeme Settings -> Apps a přídáme dvě aplikace to Radarr a Sonarr
+#### Radarr
+
+1. Sync Level
+```
+Full Sync
+```
+2. Prowlarr Server
+Jelikož to máme v jednom docker stacku a v jedné síti můžeme použít místo IP jen název kontejneru
+
+```
+http://prowlarr:9696
+```
+3. Radarr Server
+```
+http://radarr:7878
+```
+
+4. API Key
+Zajdeme do našeho [Radarru](http://localhost:7878) a jdeme do `Settings -> General` a tam si vykopírujeme API key
+
+5. A dáme `Test` a pokud vše proběhne dáme `Save`
+
+#### Sonarr 
+
+1. Sync Level
+```
+Full Sync
+```
+2. Prowlarr Server
+Jelikož to máme v jednom docker stacku a v jedné síti můžeme použít místo IP jen název kontejneru
+
+```
+http://prowlarr:9696
+```
+3. Sonarr Server
+```
+http://sonarr:7878
+```
+
+4. API Key
+Zajdeme do našeho [Sonarr](http://localhost:8989) a jdeme do `Settings -> General` a tam si vykopírujeme API key
+
+5. A dáme `Test` a pokud vše proběhne dáme `Save`
+
