@@ -184,8 +184,8 @@ networks:
 - Settings -> Media Management a vybereme `Show Advanced`
 
 1. Zaklikneme `Sonarr will use the existing file name if renaming is disabled`
-2. Formattování epizod
-- Standart Episode Format
+2. [Formattování epizod](https://trash-guides.info/Sonarr/Sonarr-recommended-naming-scheme/#optional-jellyfin)
+- Standard Episode Format
 ```
 {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoCodec]}{-Release Group}
 ```
@@ -209,8 +209,7 @@ Season {season:00}
 ```
 Prefixed Range
 ```
-3. Klikneme na `Add Root Folder` a vybereme `/movies`
-4. **NEZAPOMENE ULOŽIT**
+3. **NEZAPOMENE ULOŽIT**
 
 
 ### Radarr
@@ -221,4 +220,17 @@ Prefixed Range
 **Password**: <vlastni_heslo> \
 **Password Confirmation**: <vlastni_heslo_znovu> 
 
+- Settings -> Media Management a vybereme `Show Advanced`
+
+1. Zaklikneme `Radarr will use the existing file name if renaming is disabled`
+2. [Formátování filmů](https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/#optional-jellyfin)
+- Standard Movies Format
+```
+{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}
+```
+- Movie Foldeer Format
+```
+{Movie CleanTitle} ({Release Year}) [tmdbid-{TmdbId}]
+```
+3. **ULOŽÍME**
 
