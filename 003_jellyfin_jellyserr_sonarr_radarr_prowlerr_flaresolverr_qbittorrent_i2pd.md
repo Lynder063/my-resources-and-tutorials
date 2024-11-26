@@ -173,9 +173,9 @@ networks:
 ## Sonarr
 - Půjdeme na stránku [http://localhost:8989](http://localhost:8989) a provedeme toto nastavení
 
-**Authentication Method**: Form (Login Page)
-**Username**: <vlastni_login>
-**Password**: <vlastni_heslo>
-**Password Confirmation**: <vlastni_heslo_znovu>
+**Authentication Method**: Form (Login Page) \
+**Username**: <vlastni_login> \
+**Password**: <vlastni_heslo> \
+**Password Confirmation**: <vlastni_heslo_znovu> \
 
 ![Sonar wizard](assets/sonar_setup.png)
