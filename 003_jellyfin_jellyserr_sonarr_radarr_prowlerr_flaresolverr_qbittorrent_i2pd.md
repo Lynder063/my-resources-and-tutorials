@@ -315,3 +315,17 @@ qbittorrent
 6. A to sáme jak v kroku pět uděláme to samé pro Password
 7. Otestujeme a uložíme
 
+#### FlareSolverr
+- PŮjdeme do Settings -> Indexers a přidáme nový FlareSolverr
+1. Name
+```
+Flaresolverr
+```
+2. Tags
+```
+flaresolverr
+```
+3. Host
+```
+http://flaresolverr:8191/
+```
