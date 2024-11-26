@@ -25,8 +25,29 @@
 - `Movies`: Zde se nám pak budou vkládat **filmy**
 - `Shows`: Zde se nám pak budou vkládat **seriály**
 
+Proto musíme v compose vložit korektní cesty k naším složkám. Stačí pochopit jak se linkují složky do hosta z kontejneru
+```bash
+host_slozka:kontejner_slozka
+```
+- Musíme pro Sonarr, Radarr, Jellyfin, qBittorrent nastvit správne odkazy na složky
+- Pokud se jedná o **configy** měli bychom nechat cestu do `/opt` není třeba nic vytvářet všechny podsložky a soubory se vytvoří automaticky!
+
 ```yml
 services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    volumes:
+        - /opt/media-stack/jellyfin/config:/config
+        - /opt/media-stack/jellyfin/cache:/cache
+        - /mnt/media/movies:/movies
+        - /mnt/media/shows:/shows
+    restart: unless-stopped
+    ports:
+        - 8096:8096
+    networks:
+        - media-network
+
   jellyseerr:
     image: fallenbagel/jellyseerr:latest
     container_name: jellyseerr
@@ -51,13 +72,14 @@ services:
       - TZ=Europe/Prague
     volumes:
       - /opt/media-stack/radarr/data:/config
-      - /media/media/movies:/movies
+      - /mnt/media/movies:/movies
       - /opt/media-stack/downloads:/downloads
     ports:
       - 7878:7878
     restart: unless-stopped
     networks:
       - media-network
+
   sonarr:
     image: lscr.io/linuxserver/sonarr:latest
     container_name: sonarr
