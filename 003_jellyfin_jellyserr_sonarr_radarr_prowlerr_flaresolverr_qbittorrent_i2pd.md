@@ -299,4 +299,19 @@ Zajdeme do našeho [Sonarr](http://localhost:8989) a jdeme do `Settings -> Gener
 5. A dáme `Test` a pokud vše proběhne dáme `Save`
 
 #### qBittorrent
+- PŮjdeme do Settings -> Download Clients a přidáme qBittorrent
+
+1. Název si dáme jaký chceme
+2. Zaškrtneme `Enable`
+3. Host
+```
+qbittorrent
+```
+4. Port
+```
+8080
+```
+5. Username dáme jako přihlašovací jméno do qBittorrentu
+6. A to sáme jak v kroku pět uděláme to samé pro Password
+7. Otestujeme a uložíme
 
