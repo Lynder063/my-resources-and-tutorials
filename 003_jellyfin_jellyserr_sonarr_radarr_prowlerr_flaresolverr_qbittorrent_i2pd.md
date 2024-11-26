@@ -220,7 +220,12 @@ Season {season:00}
 ```
 Prefixed Range
 ```
-3. **NEZAPOMENE ULOŽIT**
+3. Přidání knihovny
+- Jdeme do *Settings* > *Media Management* > Nahoře *Show Advanced*
+- Dole klikneme na tlačítko **Add Root Folder**
+- Vybereme složku **/shows**
+
+4. **NEZAPOMENE ULOŽIT**
 
 
 ### Radarr
@@ -243,7 +248,12 @@ Prefixed Range
 ```
 {Movie CleanTitle} ({Release Year}) [tmdbid-{TmdbId}]
 ```
-3. **ULOŽÍME**
+3. Přidání knihovny
+- Jdeme do *Settings* > *Media Management* > Nahoře *Show Advanced*
+- Dole klikneme na tlačítko **Add Root Folder**
+- Vybereme složku **/movies**
+
+4. **ULOŽÍME**
 
 ### Prowlarr
 - Půjdeme na stránku [http://localhost:9696](http://localhost:9696) a provedeme nastavení jako u Sonarru a Radaru
