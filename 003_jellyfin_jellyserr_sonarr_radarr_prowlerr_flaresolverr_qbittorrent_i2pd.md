@@ -167,4 +167,5 @@ networks:
 - Půjdeme na stránku [http://localhost:8096](http://localhost:8096) a projedem wizard.
 
 - Když se dostaneme na část wizardu kde máme nasměrovat Jellyfin na naše media složky tak Movies mají `/movies` a Shows mají `/shows`
+![Jellyfin Media Foldeers](assets/jellyfin_media_folder.png)
 - A zbytek nastavíme podle své libosti a
