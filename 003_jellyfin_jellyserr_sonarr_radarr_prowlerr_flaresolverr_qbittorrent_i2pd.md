@@ -170,7 +170,7 @@ networks:
 ![Jellyfin Media Folders](assets/jellyfin_media_folder.png)
 - A zbytek nastavíme podle své libosti
 
-## Sonarr
+### Sonarr
 - Půjdeme na stránku [http://localhost:8989](http://localhost:8989) a provedeme toto nastavení
 
 **Authentication Method**: Form (Login Page) \
@@ -180,7 +180,40 @@ networks:
 
 ![Sonar wizard](assets/sonar_setup.png)
 
-## Radarr
+#### Nastavení
+- Settings -> Media Management a vybereme `Show Advanced`
+
+1. Zaklikneme `Sonarr will use the existing file name if renaming is disabled`
+2. Formattování epizod
+- Standart Episode Format
+```
+{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoCodec]}{-Release Group}
+```
+- Daily Episode Format
+```
+{Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoCodec]}{-Release Group}
+```
+- Anime Episode Format
+```
+{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+```
+- Series Folder Format
+```
+{Series TitleYear} [tvdbid-{TvdbId}]
+```
+- Season Folder Format
+```
+Season {season:00}
+```
+- Multi Episode Style
+```
+Prefixed Range
+```
+3. Klikneme na `Add Root Folder` a vybereme `/movies`
+4. **NEZAPOMENE ULOŽIT**
+
+
+### Radarr
 - Půjdeme na stránku [http://localhost:7878](http://localhost:7878) a provedeme nastavení jako u Sonarru
 
 **Authentication Method**: Form (Login Page) \
@@ -188,4 +221,4 @@ networks:
 **Password**: <vlastni_heslo> \
 **Password Confirmation**: <vlastni_heslo_znovu> 
 
-![Sonar wizard](assets/sonar_setup.png)
+
