@@ -194,9 +194,9 @@ docker logs qbittorrent
 - Půjdeme na stránku [http://localhost:8989](http://localhost:8989) a provedeme toto nastavení
 
 **Authentication Method**: Form (Login Page) \
-**Username**: <vlastni_login> \
-**Password**: <vlastni_heslo> \
-**Password Confirmation**: <vlastni_heslo_znovu> 
+**Username**: vlastni_login \
+**Password**: vlastni_heslo \
+**Password Confirmation**: vlastni_heslo_znovu 
 
 ![Sonar wizard](assets/sonar_setup.png)
 
@@ -241,9 +241,9 @@ Prefixed Range
 - Půjdeme na stránku [http://localhost:7878](http://localhost:7878) a provedeme nastavení jako u Sonarru
 
 **Authentication Method**: Form (Login Page) \
-**Username**: <vlastni_login> \
-**Password**: <vlastni_heslo> \
-**Password Confirmation**: <vlastni_heslo_znovu> 
+**Username**: vlastni_login \
+**Password**: vlastni_heslo \
+**Password Confirmation**: vlastni_heslo_znovu 
 
 - Settings -> Media Management a vybereme `Show Advanced`
 
@@ -268,9 +268,9 @@ Prefixed Range
 - Půjdeme na stránku [http://localhost:9696](http://localhost:9696) a provedeme nastavení jako u Sonarru a Radaru
 
 **Authentication Method**: Form (Login Page) \
-**Username**: <vlastni_login> \
-**Password**: <vlastni_heslo> \
-**Password Confirmation**: <vlastni_heslo_znovu> 
+**Username**: vlastni_login \
+**Password**: vlastni_heslo \
+**Password Confirmation**: vlastni_heslo_znovu
 
 - Pak zajdeme Settings -> Apps a přídáme dvě aplikace to Radarr a Sonarr
 
@@ -357,14 +357,17 @@ qbittorrent
 - Server Type: **Jellyfin**
 
 #### Počáteční konfigurace
+
 - Jellyfin URL: **URL pro jellyfin**
 - URL Base: **NIC**
 - Email Address: **Tvůj Email**
 - Username: **Jellyfin Uživatelské jméno!**
 - Password: **Jellyfin Heslo!**
+
 #### Import knihoven
 - Klikneme na **Sync Libraries**
 - Vybereme všechny knihovny
+
 #### Napojení na Radarr a Sonarr
 - Add Radarr Server
 	- Default server: **Povolit**
@@ -372,7 +375,7 @@ qbittorrent
 	- Hostname or IP Address: **radarr** *(Název containeru)*
 	- API Key: V **Radarr rozhraní** *Settings* > *General* > *API Key (Sekce security)*
 	- **Spustíme Test**
-	- Quality Profile: **HD - 720p/1080p**
+	- Quality Profile: **Any**
 	- Root Folder: **/movies**
 	- Enable Scan: **Povolit**
 - Add Sonarr Server
@@ -381,11 +384,11 @@ qbittorrent
 	- Hostname or IP Address: **sonarr** *(Název containeru)*
 	- API Key: V **Sonarr rozhraní** *Settings* > *General* > *API Key (Sekce security)*
 	- **Spustíme Test**
-	- Quality Profile: **HD - 720p/1080p**
-	- Root Folder: **/tv
+	- Quality Profile: **Any**
+	- Root Folder: **/shows**
 	- Language Profile: **Deprecated**
-	- Anime Quality Profile: **HD - 720p/1080p**
-	- Anime Root Folder: **/tv
+	- Anime Quality Profile: **Any**
+	- Anime Root Folder: **/shows**
 	- Anime Language Profile: **Deprecated**
 	- Season Folders: **Povolit**
 	- Enable Scan: **Povolit**
@@ -393,3 +396,4 @@ qbittorrent
 **Finish setup**
 
 ### Homarr
+
