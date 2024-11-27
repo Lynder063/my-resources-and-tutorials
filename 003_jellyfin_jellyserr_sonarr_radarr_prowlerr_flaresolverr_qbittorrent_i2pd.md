@@ -149,6 +149,23 @@ services:
     networks:
       - media-network
 
+  homarr:
+    container_name: homarr
+    image: ghcr.io/ajnart/homarr:latest
+    restart: unless-stopped
+    environment: 
+      - DEFAULT_COLOR_SCHEME=dark
+      - TZ=Europe/Prague
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
+      - /opt/media-stack-homarr:/app/data/configs
+      - /opt/media-stack-homarr:/app/public/icons
+      - /opt/media-stack-homarr:/data
+    ports:
+      - '7575:7575'
+    networks:
+      - media-network
+
 networks: 
   media-network: 
     driver: bridge
@@ -375,4 +392,4 @@ qbittorrent
 
 **Finish setup**
 
-
+### Homarr
