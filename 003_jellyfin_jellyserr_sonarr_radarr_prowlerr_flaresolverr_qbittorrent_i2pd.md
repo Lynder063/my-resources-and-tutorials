@@ -396,4 +396,22 @@ qbittorrent
 **Finish setup**
 
 ### Homarr
+- Projedem začíteční wizard
+- Pak vybereme **Board** a přidáme naše kontejnery
+
+![Edit container docker](assets/edit_containers_homarr.png)
+
+![Add containers](assets/add_containers.png)
+
+- A nyní se ukážeme jedno nastavení ale stejný způsobem se nastavý všechno
+
+![Settings container](assets/settings_container.png)
+
+- A pak v `Integration`
+
+Vždy vybereme příslušnou aplikaci a vyplníme údaje a **uložíme**
+
+![Settings container](assets/integraton_container.png)
+
+
 
